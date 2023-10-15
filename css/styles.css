@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 40px;
+    background-color: #1B262C;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #0F4C75;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: 500;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li:hover {
+    color: #1B262C;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#content {
+    display: flex;
+}
+
+.container {
+    padding: 60px;
+}
+
+.container h2, .container p {
+    color: white;
+    padding: 0;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+#island {
+    background-color: rgb(52, 52, 52);
+}
+
+#kitchen {
+    background-color: #271c18;
+}
+
+#chefs {
+    background-color: #b37252;
+}
+
+#menu {
+    background-color: #887570;
+}
+
+article > img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    margin: 20px 0px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.chef-list, .menu-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: white;
+    width: 20%;
+    min-width: 200px;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.card-front img {
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card h3, .card p {
+    padding: 0px 5px 10px 10px;
+    margin: 0;
+    color: white;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #694b3e;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.8);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    position: relative;
+    display: flex;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    backface-visibility: hidden;
+    color: white;
+    align-self: flex-start;
+}
+
+.card-back {
+    position: absolute;
+    align-self: center;
+}
+
+.card-back p {
+    padding: 10px;
+}
+
+.card-back, .card.flipped {
+    transform: rotateY(180deg);
+}
+
+.menu-list h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0px 10px 10px 10px;
+}
+
+.menu-list .card-inner {
+    background-color: darkorange;
+}
+
+aside {
+    flex: 1;
+    color: white;
+    background-color: black;
+}
+
+.movie header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movie img {
+    width: 200px;
+    border: 4px solid white;
+}
+
+.movie section {
+    margin-left: 20px;
+}
+
+table {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    padding: 0 20px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #1B262C;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
