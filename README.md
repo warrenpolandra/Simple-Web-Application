@@ -1,4 +1,4 @@
-# Submission-Dicoding-Belajar-Dasar-Pemrograman-Web
+# Simple Web Application
 Submission kelas Dicoding: Belajar Dasar Pemrograman Web. Membuat aplikasi Web sederhana. Aplikasi dibuat dengan HTML dan CSS dasar dengan susunan Header, Body, dan Footer. Aplikasi Web juga dibuat dengan style flex agar bisa menyesuaikan item dari flex container yang ada.
 
 ## Deskripsi Aplikasi
